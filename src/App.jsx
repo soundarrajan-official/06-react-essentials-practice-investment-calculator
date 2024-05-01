@@ -1,8 +1,8 @@
+import Header from "./components/Header/Header.jsx";
+
 function App() {
   return (
-      <main>
-          <p>Coming Soon...</p>
-      </main>
+       <Header/>
   )
 }
 
