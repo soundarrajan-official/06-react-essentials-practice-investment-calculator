@@ -1,6 +1,8 @@
 function App() {
   return (
-    <h1>React Investment Calculator</h1>
+      <main>
+          <p>Coming Soon...</p>
+      </main>
   )
 }
 
