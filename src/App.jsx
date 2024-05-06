@@ -44,7 +44,8 @@ function App() {
         setInvestmentData((prevInvestmentData) => {
             return {
                 ...prevInvestmentData,
-                [name]: value
+                // + added to convert string to number
+                [name]: +value
             }
         })
     }
