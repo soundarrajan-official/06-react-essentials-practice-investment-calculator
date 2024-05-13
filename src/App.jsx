@@ -21,6 +21,8 @@ function App() {
 
     const [investmentData, setInvestmentData] = useState(initialInvestmentData)
 
+    const isInputValid = investmentData.duration >= 1
+
     /**
      *  const handleInitialInvestmentChange = (event) => {
      *         setInitialInvestment(event.target.value)
@@ -57,7 +59,8 @@ function App() {
                 investmentData={investmentData}
                 handleInvestmentDataChange={handleInvestmentDataChange}
             />
-            <Result investmentData={investmentData}/>
+            {!isInputValid && <p className="center">Please enter a duration greater than zero</p>}
+            {isInputValid && <Result investmentData={investmentData}/>}
         </>
     )
 }
